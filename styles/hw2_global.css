@@ -74,14 +74,12 @@ body{
 }
 
 .navbar_name{
-    /*background-color: gray;*/
     margin-top: 1%;
     text-align: right;
     padding-right: 10%;
 }
 
 .navbar_icon{
-    /*background-color: black;*/
     margin-top: 1.5%;
     padding-left: 5%;
 }
