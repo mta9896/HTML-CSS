@@ -1,34 +1,45 @@
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
 .register_box{
     background-color: white;
-    margin: auto;
-    position: relative;
-    margin-top: 10%;
-    margin-bottom: 20%;
-    padding-left: 5%;
-    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-radius: 5px;
     box-shadow: 2px 2px 3px 3px #006080;
+}
+
+.register_box .header{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
     direction: rtl;
 }
 
 .form_container{
     display: flex;
-    width: 100%;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=text], input[type=password] {
-    width: 80%;
+    /*width: 80%;*/
     border-top: 2px solid white;
     border-right: 2px solid white;
     border-left: 2px solid white;
     border-bottom: 2px solid #ccc;
-    padding-top: 9%;
+    /*padding-top: 9%;*/
 
 }
 
 .form-icon{
     color: inherit;
-    margin-left: 2%;
 }
 
 
@@ -46,12 +57,14 @@ input:focus ~ .form-icon{
 .register_button{
     width: 100%;
     font-family: 'Shabnam';
-    margin-top: 15%;
+    margin-top: 20px;
     background-color: #4452cc;
     border: none;
     color: white;
     text-align: center;
-    padding: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*padding: 3%;*/
 }
 
 .register_button:hover{
@@ -65,8 +78,9 @@ input, .register_button{
 
 .form_item{
     color:#b3b3b3;
-    padding-bottom: 12%;
-    /*display: flex;*/
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction:row-reverse;
     /*justify-con   tent: center;*/
 }
 
@@ -76,13 +90,13 @@ input, .register_button{
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 13%
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 .accept_conditions{
-    margin-top: 9%;
+    /*margin-top: 9%;*/
     font-size: 1.3em;
     color: #707070;
 }
@@ -125,6 +139,8 @@ input:checked ~ .register_button{
 .float-left{
     float: left;
 }
+
+
 
 
 
