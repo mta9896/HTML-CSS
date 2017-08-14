@@ -29,7 +29,7 @@
 }
 
 input[type=text], input[type=password] {
-    /*width: 80%;*/
+    width: 80%;
     border-top: 2px solid white;
     border-right: 2px solid white;
     border-left: 2px solid white;
@@ -81,6 +81,7 @@ input, .register_button{
     padding-bottom: 40px;
     display: flex;
     flex-direction:row-reverse;
+    justify-content: flex-end;
     /*justify-con   tent: center;*/
 }
 
@@ -140,6 +141,34 @@ input:checked ~ .register_button{
     float: left;
 }
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .register_box{
+        width: 80%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .register_box{
+        width: 100%;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .register_box{
+        width: 100%;
+    }
+}
 
 
 

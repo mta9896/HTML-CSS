@@ -95,6 +95,7 @@ input, .login_button{
     padding-bottom: 40px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     /*justify-content: center;*/
 }
 
@@ -123,4 +124,31 @@ input, .login_button{
     float: left;
 }
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .login_box{
+        width: 80%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .login_box{
+        width: 100%;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .login_box{
+        width: 100%;
+    }
+}
